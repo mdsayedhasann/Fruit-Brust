@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
     <!-- DaisyUi cdn Start -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- DaisyUi cdn Start -->
 
     <!-- Tailwind CDN Start -->
@@ -14,87 +18,121 @@
     <!-- Tailwind CDN End -->
 
     <!-- Font Awesome Start -->
-    <script src="https://kit.fontawesome.com/6f815983a3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6f815983a3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Font Awesome End -->
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'primary-color': '#F85559',
-              }
-            }
-          }
+    <!-- Google Fonts Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End -->
+
+
+    <style>
+        .lato-font{
+            font-family: 'Lato', sans-serif;
         }
-      </script>
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  
-  
-  <body>
-    <header class="max-w-[1440px] mx-auto ">
-        <nav class="my-7">
-            <div class="navbar bg-base-100 bg-primary-color rounded-full text-white">
-                
-                <!-- Nav Left Start -->
-                <div class="navbar-start">
-                    
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <!-- Nav Left End -->
 
-                <!-- Nav Middle Start -->
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div>
-                <!-- Nav Middle End -->
+  <body class="lato-font">
+    <header class="max-w-[1440px] mx-auto">
+      <nav class="my-7">
+        <div class="navbar bg-base-100 bg-primary-color rounded-full text-white">
+          <!-- Nav Left Start -->
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <!-- Nav Left End -->
 
-                <!-- Nav Right Start -->
-                <div class="navbar-end">
-                    <div class="form-control sm:hidden">
-                        <div class="input-group">
-                          <input type="text" placeholder="Search…" class="input input-bordered" />
-                          <button class="btn btn-square">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                          </button>
-                        </div>
-                      </div>
+          <!-- Nav Middle Start -->
+          <div class="navbar-center">
+            <div class="flex items-center gap-3">
+              <img src="./images/logo.png" alt="" />
+              <h3 class="text-white text-3xl font-bold">Fruit Burst</h3>
+            </div>
+          </div>
+          <!-- Nav Middle End -->
 
-
-
-
-                  <div class="dropdown ">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="text-[#000] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 1</a></li>
-                      
-                    </ul>
-                  </div>
-
-                  
-                  <!-- Nav Right End -->
-
-                </div>
+          <!-- Nav Right Start -->
+          <div class="navbar-end">
+            <div class="form-control sm:hidden lg:block mr-5 rounded-full">
+              <div class="input-group">
+                <input  type="text"  placeholder="Search here" class="input  rounded-3xl outline-none border-none	"
+                />
+                <button class="btn rounded-full bg-white outline-none border-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
               </div>
-        </nav>
+            </div>
+
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="text-[#000] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0"
+              >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+
+            <!-- Nav Right End -->
+          </div>
+        </div>
+      </nav>
     </header>
   </body>
 </html>
