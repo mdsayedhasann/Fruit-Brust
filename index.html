@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- DaisyUi cdn Start -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -100,24 +101,53 @@
           <!-- Nav Right Start -->
           <div class="navbar-end">
             <!-- Toggle Start -->
-            <div class="dropdown">
+            <div class="dropdown ">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                
                 <i class="fa-solid fa-bars text-2xl"></i>
               </label>
-              <ul
+              <div class="dropdown-content z-20 flex flex-col right-0 bg-primary-color">
+                <ul
                 tabindex="0"
-                class="text-[#000] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary-color rounded-box w-52 right-0"
+                class="text-[#000] menu menu-sm  mt-3 z-[1] p-2 rounded-box w-52"
               >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
                 <li><a>All Fruits</a></li>
-                <li>
-                    hello
-                </li>
+                
               </ul>
+              <!-- Dropdown Search Form Start -->
+            <div class="form-control md:hidden mr-5 rounded-full w-30 mx-auto ml-2">
+                <div class="input-group">
+                  <input 
+                    type="text" tabindex="0" 
+                    placeholder="Search here"
+                    class="input rounded-l-full outline-none border-none menu menu-sm z-[1]"
+                  />
+                  <button
+                    class="btn rounded-full bg-white outline-none border-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- Dropdown Search Form End -->
             </div>
+              </div>
             <!-- Toggle End -->
 
             <!-- Search Form Start -->
@@ -1383,7 +1413,7 @@
 
 
     <!-- //////////          Footer Section Started          ////////// -->
-    <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
+    <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded mt-10">
 
         <!-- Logo  -->
         <div class="logo">
