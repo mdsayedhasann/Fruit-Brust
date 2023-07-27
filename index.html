@@ -43,13 +43,15 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-color: rgba(
-          18,
-          18,
-          18,
-          0.8
-        ); /* Change the overlay color and opacity here */
+        background-color: rgba(18, 18, 18, 0.8);
+        border-radius: 24px; /* Change the overlay color and opacity here */
         /* z-index: -1; */
+      }
+      input.input.rounded-l-full.outline-none.border-none {
+        border-radius: 50px 0 0 50px;
+      }
+      button.btn.rounded-full.bg-white.outline-none.border-none {
+        border-radius: 0 50px 50px 0;
       }
     </style>
     <!-- Custom Style End -->
@@ -195,7 +197,7 @@
       <!-- //////////          Nav End          ////////// -->
 
       <!-- //////////          Banner Section Start          ////////// -->
-      <div class="carousel w-full z-0">
+      <div class="carousel w-full z-0 rounded-xl">
         <!-- Banner 1 start -->
         <div id="slide1" class="carousel-item relative w-full">
           <div
@@ -1244,8 +1246,10 @@
       <!-- //////////          Deal of the day Start          ////////// -->
 
       <!-- //////////          Team Section Start          ////////// -->
-      <section class=" ">
-        <div class="bg-team-banner bg-cover bg-no-repeat py-20 relative">
+      <section class="">
+        <div
+          class="bg-team-banner bg-cover bg-no-repeat py-20 relative rounded-3xl"
+        >
           <div class="overlay"></div>
           <div class="flex flex-column justify-center items-center space-y-8">
             <div class="lg:max-w-[615px] max-w-[75%] text-center z-20">
@@ -1434,119 +1438,183 @@
         </div>
         <!-- Title End -->
 
-        <!--  -->
-        <!--  -->
-        <!--  -->
         <!-- WHY CHOOSE US Matha Nosto Part -->
         <!--  -->
         <!--  -->
         <!--  -->
         <div class="mt-28 grid grid-cols-1 md:grid-cols-3 gap-6 -space-y-16">
+          <!-- 1 -->
+          <div class="md:hidden">
+            <img src="./images/whychoose1.png" alt="" />
+          </div>
 
-            <!-- 1 -->
-            <div class="md:hidden "><img src="./images/whychoose1.png" alt=""></div>
-    
-            <!-- 2 --> 
-           <div class="">
-            <div class="text-center md:text-left  flex flex-col md:flex-row items-center my-9 gap-5">
-                <div class="w-[15%]  bg-[#E7E7E7] rounded-full ">
-                    <i class="fa-solid fa-users-line text-3xl p-3 mr-5 text-center "></i></div>
+          <!-- 2 -->
+          <div class="">
+            <div
+              class="text-center md:text-left flex flex-col md:flex-row items-center my-9 gap-5"
+            >
+              <div class="w-[15%] bg-[#E7E7E7] rounded-full">
+                <i
+                  class="fa-solid fa-users-line text-3xl p-3 mr-5 text-center"
+                ></i>
+              </div>
+              <div class="w-[75%]">
+                <h3 class="text-black text-2xl">Dedicated Team</h3>
+                <p class="text-[#12121299]">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="text-center md:text-left flex flex-col md:flex-row items-center my-9 gap-5"
+            >
+              <div class="w-[15%] bg-[#E7E7E7] rounded-full">
+                <i class="fa-regular fa-heart text-3xl p-3 mr-5"></i>
+              </div>
+              <div class="w-[75%]">
+                <h3 class="text-black text-2xl">Fresh is Best</h3>
+                <p class="text-[#12121299]">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="text-center md:text-left flex flex-col md:flex-row items-center my-9 gap-5"
+            >
+              <div class="w-[15%] bg-[#E7E7E7] rounded-full p-3">
+                <i class="fa-solid fa-house-chimney text-3xl"></i>
+              </div>
+              <div class="w-[75%]">
+                <h3 class="text-black text-2xl">Gift Certificates</h3>
+                <p class="text-[#12121299]">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="hidden md:block">
+            <img src="./images/whychoose1.png" alt="" />
+          </div>
+
+          <!-- 4 -->
+          <div class="hidden md:block">
+            <div class="">
+              <div
+                class="md:text-right flex flex-col md:flex-row items-center my-9 gap-5"
+              >
                 <div class="w-[75%]">
-                    <h3 class="text-black text-2xl">Dedicated Team</h3>
-                    <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h3 class="text-black text-2xl">Integrated Supplier</h3>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
                 </div>
-            </div>
-    
-            <div class="text-center md:text-left  flex flex-col md:flex-row items-center my-9 gap-5">
-                <div class="w-[15%] bg-[#E7E7E7] rounded-full "><i class="fa-regular fa-heart text-3xl p-3 mr-5  "></i></div>
+                <div class="w-[15%] bg-[#E7E7E7] rounded-full text-center">
+                  <i
+                    class="fa-solid fa-apple-whole text-3xl p-3 mr-5 text-center"
+                  ></i>
+                </div>
+              </div>
+
+              <div
+                class="md:text-right flex flex-col md:flex-row items-center my-9 gap-5"
+              >
                 <div class="w-[75%]">
-                    <h3 class="text-black text-2xl">Fresh is Best</h3>
-                    <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h3 class="text-black text-2xl">Sustainable Practice</h3>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
                 </div>
-            </div>
-    
-            <div class="text-center md:text-left  flex flex-col md:flex-row items-center my-9 gap-5">
-                <div class="w-[15%] bg-[#E7E7E7] rounded-full p-3"><i class="fa-solid fa-house-chimney text-3xl   "></i></div>
+                <div class="w-[15%] bg-[#E7E7E7] rounded-full text-center">
+                  <i
+                    class="fa-solid fa-ice-cream text-3xl p-3 mr-5 text-center"
+                  ></i>
+                </div>
+              </div>
+
+              <div
+                class="md:text-right flex flex-col md:flex-row items-center my-9 gap-5"
+              >
                 <div class="w-[75%]">
-                    <h3 class="text-black text-2xl">Gift Certificates</h3>
-                    <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <h3 class="text-black text-2xl">The Benefits Only</h3>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
                 </div>
+                <div class="w-[15%] bg-[#E7E7E7] rounded-full p-3 text-center">
+                  <i class="fa-regular fa-thumbs-up text-3xl text-center"></i>
+                </div>
+              </div>
             </div>
-           </div>
-    
-            <!-- 3 -->
-            <div class="hidden md:block"><img src="./images/whychoose1.png" alt=""></div>
-    
-            <!-- 4 -->
-            <div class="hidden md:block">
-                <div class="">
-                    <div class="md:text-right  flex flex-col md:flex-row items-center my-9 gap-5">
-                        
-                        <div class="w-[75%]">
-                            <h3 class="text-black text-2xl">Integrated Supplier</h3>
-                            <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                        <div class="w-[15%] bg-[#E7E7E7] rounded-full text-center"><i class="fa-solid fa-apple-whole text-3xl p-3 mr-5 text-center "></i></div>
-                    </div>
-            
-                    <div class="md:text-right  flex flex-col md:flex-row items-center my-9 gap-5">
-                        
-                        <div class="w-[75%]">
-                            <h3 class="text-black text-2xl">Sustainable Practice</h3>
-                            <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                        <div class="w-[15%] bg-[#E7E7E7] rounded-full text-center"><i class="fa-solid fa-ice-cream text-3xl p-3 mr-5 text-center "></i></div>
-                    </div>
-            
-                    <div class="md:text-right  flex flex-col md:flex-row items-center my-9 gap-5">
-                        
-                        <div class="w-[75%]">
-                            <h3 class="text-black text-2xl">The Benefits Only</h3>
-                            <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                        <div class="w-[15%] bg-[#E7E7E7] rounded-full p-3 text-center"><i class="fa-regular fa-thumbs-up text-3xl text-center  "></i></div>
-                    </div>
-                   </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="md:hidden">
+            <div class="">
+              <div
+                class="text-center md:text-left flex flex-col md:flex-row items-center my-9 gap-5"
+              >
+                <div class="w-[15%] bg-[#E7E7E7] rounded-full">
+                  <i
+                    class="fa-solid fa-apple-whole text-3xl p-3 mr-5 text-center"
+                  ></i>
+                </div>
+                <div class="w-[75%]">
+                  <h3 class="text-black text-2xl">Dedicated Team</h3>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="text-center md:text-left flex flex-col md:flex-row items-center my-9 gap-5"
+              >
+                <div class="w-[15%] bg-[#E7E7E7] rounded-full">
+                  <i
+                    class="fa-solid fa-ice-cream text-3xl p-3 mr-5 text-center"
+                  ></i>
+                </div>
+                <div class="w-[75%]">
+                  <h3 class="text-black text-2xl">Dedicated Team</h3>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="text-center md:text-left flex flex-col md:flex-row items-center my-9 gap-5"
+              >
+                <div class="w-[15%] bg-[#E7E7E7] rounded-full p-3">
+                  <i class="fa-regular fa-thumbs-up text-3xl text-center"></i>
+                </div>
+                <div class="w-[75%]">
+                  <h3 class="text-black text-2xl">Dedicated Team</h3>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
             </div>
-    
-            <!-- 5 -->
-            <div class="md:hidden ">
-                <div class="">
-                    <div class="text-center md:text-left  flex flex-col md:flex-row items-center my-9 gap-5">
-                        <div class="w-[15%] bg-[#E7E7E7] rounded-full "><i class="fa-solid fa-apple-whole text-3xl p-3 mr-5 text-center "></i></div>
-                        <div class="w-[75%]">
-                            <h3 class="text-black text-2xl">Dedicated Team</h3>
-                            <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                    </div>
-            
-                    <div class="text-center md:text-left  flex flex-col md:flex-row items-center my-9 gap-5">
-                        <div class="w-[15%] bg-[#E7E7E7] rounded-full "><i class="fa-solid fa-ice-cream text-3xl p-3 mr-5 text-center "></i></div>
-                        <div class="w-[75%]">
-                            <h3 class="text-black text-2xl">Dedicated Team</h3>
-                            <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                    </div>
-            
-                    <div class="text-center md:text-left  flex flex-col md:flex-row items-center my-9 gap-5">
-                        <div class="w-[15%] bg-[#E7E7E7] rounded-full p-3"><i class="fa-regular fa-thumbs-up text-3xl text-center  "></i></div>
-                        <div class="w-[75%]">
-                            <h3 class="text-black text-2xl">Dedicated Team</h3>
-                            <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
-                    </div>
-                   </div>
-            </div>
+          </div>
         </div>
         <!--  -->
         <!--  -->
         <!--  -->
         <!-- WHY CHOOSE US Matha Nosto Part -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-
       </section>
       <!-- //////////          WHY CHOOSE US Section End          ////////// -->
     </main>
